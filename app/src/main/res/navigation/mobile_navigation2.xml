@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_food_menu">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.icelogia.sportfittu.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_food_menu"
+        android:name="com.icelogia.sportfittu.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_food_menu" />
+
+    <fragment
+        android:id="@+id/nav_meassures"
+        android:name="com.icelogia.sportfittu.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_meassures" />
+    <fragment
+        android:id="@+id/nav_recipies"
+        android:name="com.icelogia.sportfittu.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_recipes" />
+
+    <fragment
+        android:id="@+id/nav_training_plan"
+        android:name="com.icelogia.sportfittu.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_training_plan" />
+
+    <fragment
+        android:id="@+id/nav_training_list"
+        android:name="com.icelogia.sportfittu.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_trining_list" />
+    <fragment
+        android:id="@+id/nav_calculator"
+        android:name="com.icelogia.sportfittu.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_calculator" />
+
+    <fragment
+        android:id="@+id/nav_race"
+        android:name="com.icelogia.sportfittu.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_race" />
+</navigation>

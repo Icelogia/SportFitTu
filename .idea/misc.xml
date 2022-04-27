@@ -3,7 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/layout/activity_main.xml" value="0.17980072463768115" />
+        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/layout/activity_menu.xml" value="0.2578125" />
+        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/layout/activity_menu_page.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/layout/app_bar_menu.xml" value="0.2578125" />
+        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/layout/app_bar_menu2.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/layout/content_menu.xml" value="0.2578125" />
+        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/layout/content_menu2.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/layout/fragment_calculator.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/layout/fragment_gallery.xml" value="0.2578125" />
+        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/layout/fragment_home.xml" value="0.2578125" />
+        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/layout/fragment_meassures.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/layout/fragment_race.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/layout/fragment_slideshow.xml" value="0.2578125" />
+        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/layout/fragment_training_plan.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/layout/fragment_trining_list.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/layout/nav_header_menu.xml" value="0.5" />
+        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/layout/recipes.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/menu/activity_main_drawer.xml" value="0.2578125" />
+        <entry key="..\:/Users/Icelogia/Desktop/Studia/Semestr 6/Android/Projekt/SportFitTu/app/src/main/res/menu/activity_menu_page_drawer.xml" value="0.22552083333333334" />
       </map>
     </option>
   </component>
