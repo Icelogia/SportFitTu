@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SportFitTu">
         <activity
+            android:name=".CalculatorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExerciesListAcivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrainingPlanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MeasureActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

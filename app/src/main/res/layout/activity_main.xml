@@ -4,15 +4,102 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D1D6DC"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="355dp"
+        android:layout_height="126dp"
+        android:background="#E3E3E3"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:id="@+id/textViewCarbo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carbohydrates" />
+
+        <ProgressBar
+            android:id="@+id/progressBarCarbo"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textViewFats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fats" />
+
+        <ProgressBar
+            android:id="@+id/progressBarFats"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textViewProtein"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Protein" />
+
+        <ProgressBar
+            android:id="@+id/progressBarProtein"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="360dp"
+        android:layout_height="327dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonMeasures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Measures" />
+
+        <Button
+            android:id="@+id/buttonFoodMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu" />
+
+        <Button
+            android:id="@+id/buttonRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recipes" />
+
+        <Button
+            android:id="@+id/buttonTrainingPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Training Plan" />
+
+        <Button
+            android:id="@+id/buttonExerciseList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Execise List" />
+
+        <Button
+            android:id="@+id/buttonCalculator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculator" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
