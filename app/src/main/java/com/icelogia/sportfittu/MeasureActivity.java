@@ -14,9 +14,5 @@ public class MeasureActivity extends AppCompatActivity {
         setContentView(R.layout.activity_measure);
     }
 
-    public void navigateToHome(View view)
-    {
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intent);
-    }
+
 }

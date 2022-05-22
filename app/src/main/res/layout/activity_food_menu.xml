@@ -6,22 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".FoodMenuActivity">
 
-    <include
-        android:id="@+id/include"
-        layout="@layout/toolbar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="394dp"
         android:layout_height="64dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include">
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/datePickerMenu"

@@ -14,9 +14,5 @@ public class ExerciesListAcivity extends AppCompatActivity {
         setContentView(R.layout.activity_exercies_list);
     }
 
-    public void navigateToHome(View view)
-    {
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intent);
-    }
+
 }

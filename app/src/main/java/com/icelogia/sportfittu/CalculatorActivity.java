@@ -14,9 +14,4 @@ public class CalculatorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_calculator);
     }
 
-    public void navigateToHome(View view)
-    {
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intent);
-    }
 }

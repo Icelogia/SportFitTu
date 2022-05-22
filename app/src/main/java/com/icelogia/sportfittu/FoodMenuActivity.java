@@ -36,12 +36,6 @@ public class FoodMenuActivity extends AppCompatActivity
         return makeDateString(day, month, year);
     }
 
-    public void navigateToHome(View view)
-    {
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intent);
-    }
-
     private void initDatePicker()
     {
         DatePickerDialog.OnDateSetListener dateSetListener = new DatePickerDialog.OnDateSetListener()
@@ -52,6 +46,8 @@ public class FoodMenuActivity extends AppCompatActivity
                 month = month + 1;
                 String date = makeDateString(day, month, year);
                 dateButton.setText(date);
+
+                //ToDo: Update Menu for specific day
             }
         };
 

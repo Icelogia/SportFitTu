@@ -14,9 +14,5 @@ public class TrainingPlanActivity extends AppCompatActivity {
         setContentView(R.layout.activity_training_plan);
     }
 
-    public void navigateToHome(View view)
-    {
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intent);
-    }
+
 }

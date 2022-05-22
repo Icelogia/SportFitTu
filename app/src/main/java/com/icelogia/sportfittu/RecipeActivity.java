@@ -14,9 +14,5 @@ public class RecipeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recipe);
     }
 
-    public void navigateToHome(View view)
-    {
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intent);
-    }
+
 }
