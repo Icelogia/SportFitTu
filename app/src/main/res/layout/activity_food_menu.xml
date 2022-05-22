@@ -12,17 +12,18 @@
         android:layout_height="64dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/datePickerMenu"
-            android:background="@android:color/white"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:onClick="openDatePicker"
             android:text="JAN 01 2022"
-            android:textSize="30sp"
             android:textColor="@color/black"
-            android:onClick="openDatePicker"/>
+            android:textSize="30sp" />
 
 
     </LinearLayout>
