@@ -1,6 +1,8 @@
 package com.icelogia.sportfittu;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
@@ -10,12 +12,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 
+import com.icelogia.sportfittu.food.DayMenu;
+import com.icelogia.sportfittu.food.FoodDatabaseMock;
+
+import java.util.ArrayList;
 import java.util.Calendar;
 
 public class FoodMenuActivity extends AppCompatActivity
 {
     private DatePickerDialog datePickerDialog;
     private Button dateButton;
+    private FoodDatabaseMock foodDb = new FoodDatabaseMock();
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -25,6 +32,24 @@ public class FoodMenuActivity extends AppCompatActivity
         initDatePicker();
         dateButton = findViewById(R.id.datePickerMenu);
         dateButton.setText(getTodayDate());
+
+
+        ArrayList<DayMenu> dayMenus = foodDb.downloadDayMenus();
+        ArrayList<MealItem> breakfastMeals = dayMenus.get(0).getMealItems();
+        ArrayList<MealItem> lunchMeals = dayMenus.get(1).getMealItems();
+        ArrayList<MealItem> dinnerMeals = dayMenus.get(2).getMealItems();
+
+        setMealRecyclerView(breakfastMeals, R.id.breakfastRecyclerView);
+        setMealRecyclerView(lunchMeals, R.id.lunchRecyclerView);
+        setMealRecyclerView(dinnerMeals, R.id.dinnerRecyclerView);
+    }
+
+    private void setMealRecyclerView(ArrayList<MealItem> items, int id)
+    {
+        RecyclerView recyclerViewMeals= findViewById(id);
+        MealRecyclerViewAdapter mealAdapter = new MealRecyclerViewAdapter(this, items);
+        recyclerViewMeals.setAdapter(mealAdapter);
+        recyclerViewMeals.setLayoutManager(new LinearLayoutManager(this));
     }
 
     private String getTodayDate()
