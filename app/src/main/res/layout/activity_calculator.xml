@@ -8,8 +8,8 @@
 
 
     <LinearLayout
-        android:layout_width="349dp"
-        android:layout_height="584dp"
+        android:layout_width="357dp"
+        android:layout_height="603dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,32 +23,25 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/editTextBMIWeight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:text="Weigh (kg)" />
+            android:hint="Weigh (kg)"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/editTextHeight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:text="Age (years)" />
-
-        <Switch
-            android:id="@+id/switch1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Gender M/F" />
+            android:hint="Height"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textViewBmiResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Result: " />
@@ -65,18 +58,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:text="Weigh (kg)" />
+            android:hint="Weigh (kg)"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/editTextTextPersonName4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:text="+/- calories" />
+            android:hint="+/- calories"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
 
         <TextView
             android:id="@+id/textView5"

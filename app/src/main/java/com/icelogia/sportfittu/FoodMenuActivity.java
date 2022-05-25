@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.TextView;
 
 import com.icelogia.sportfittu.food.DayMenu;
 import com.icelogia.sportfittu.food.FoodDatabaseMock;
@@ -42,6 +43,8 @@ public class FoodMenuActivity extends AppCompatActivity
         setMealRecyclerView(breakfastMeals, R.id.breakfastRecyclerView);
         setMealRecyclerView(lunchMeals, R.id.lunchRecyclerView);
         setMealRecyclerView(dinnerMeals, R.id.dinnerRecyclerView);
+
+        setMealsHeaders(dayMenus);
     }
 
     private void setMealRecyclerView(ArrayList<MealItem> items, int id)
@@ -126,5 +129,38 @@ public class FoodMenuActivity extends AppCompatActivity
     public void openDatePicker(View view)
     {
         datePickerDialog.show();
+    }
+
+    private void setMealsHeaders(ArrayList<DayMenu> dayMenus)
+    {
+        TextView breakfastCarbons = findViewById(R.id.textViewBrekfastCarbon);
+        TextView breakfastProteins = findViewById(R.id.textViewBrekfastProtein);
+        TextView breakfastFats = findViewById(R.id.textViewBrekfastFat);
+        TextView breakfastKcals = findViewById(R.id.textViewBrekfastCalories);
+
+        TextView lunchCarbons = findViewById(R.id.textViewLunchCarbon);
+        TextView lunchProteins = findViewById(R.id.textViewLunchProtein);
+        TextView lunchFats = findViewById(R.id.textViewLunchFat);
+        TextView lunchKcals = findViewById(R.id.textViewLunchCalories);
+
+        TextView dinnerCarbons = findViewById(R.id.textViewDinnerCarbon);
+        TextView dinnerProteins = findViewById(R.id.textViewDinnerProtein);
+        TextView dinnerFats = findViewById(R.id.textViewDinnerFat);
+        TextView dinnerKcals = findViewById(R.id.textViewDinnerCalories);
+
+        breakfastCarbons.setText(dayMenus.get(0).getCarbons());
+        breakfastProteins.setText(dayMenus.get(0).getProteins());
+        breakfastFats .setText(dayMenus.get(0).getFats());
+        breakfastKcals.setText(dayMenus.get(0).getKcal());
+
+        lunchCarbons.setText(dayMenus.get(1).getCarbons());
+        lunchProteins.setText(dayMenus.get(1).getProteins());
+        lunchFats .setText(dayMenus.get(1).getFats());
+        lunchKcals.setText(dayMenus.get(1).getKcal());
+
+        dinnerCarbons.setText(dayMenus.get(2).getCarbons());
+        dinnerProteins.setText(dayMenus.get(2).getProteins());
+        dinnerFats .setText(dayMenus.get(2).getFats());
+        dinnerKcals.setText(dayMenus.get(2).getKcal());
     }
 }
