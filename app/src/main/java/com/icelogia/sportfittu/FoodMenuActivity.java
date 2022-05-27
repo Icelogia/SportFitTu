@@ -49,7 +49,7 @@ public class FoodMenuActivity extends AppCompatActivity
 
     private void setMealRecyclerView(ArrayList<MealItem> items, int id)
     {
-        RecyclerView recyclerViewMeals= findViewById(id);
+        RecyclerView recyclerViewMeals = findViewById(id);
         MealRecyclerViewAdapter mealAdapter = new MealRecyclerViewAdapter(this, items);
         recyclerViewMeals.setAdapter(mealAdapter);
         recyclerViewMeals.setLayoutManager(new LinearLayoutManager(this));
