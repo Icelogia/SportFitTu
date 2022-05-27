@@ -54,7 +54,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName5"
+            android:id="@+id/editTextWeightCaloriesCalc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -63,7 +63,7 @@
             android:minHeight="48dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/editTextExtraCaloriesCalc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -72,7 +72,7 @@
             android:minHeight="48dp" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textViewCaloriesResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Result:" />

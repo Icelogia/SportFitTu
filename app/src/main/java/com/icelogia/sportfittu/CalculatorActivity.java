@@ -17,6 +17,8 @@ public class CalculatorActivity extends AppCompatActivity {
 
         EditText bmiWeightTextView = findViewById(R.id.editTextBMIWeight);
         EditText bmiHeightTextView = findViewById(R.id.editTextHeight);
+        EditText caloriesWeightTextView = findViewById(R.id.editTextWeightCaloriesCalc);
+        EditText caloriesExtraTextView = findViewById(R.id.editTextExtraCaloriesCalc);
 
         bmiWeightTextView.addTextChangedListener(new TextWatcher() {
 
@@ -41,6 +43,32 @@ public class CalculatorActivity extends AppCompatActivity {
 
             public void afterTextChanged(Editable s) {
                 calculateBMI(bmiWeightTextView, bmiHeightTextView);
+            }
+        });
+
+        caloriesWeightTextView.addTextChangedListener(new TextWatcher() {
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) { }
+
+            public void afterTextChanged(Editable s) {
+                calculateNecessaryCalories(caloriesWeightTextView, caloriesExtraTextView);
+            }
+        });
+
+        caloriesExtraTextView.addTextChangedListener(new TextWatcher() {
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) { }
+
+            public void afterTextChanged(Editable s) {
+                calculateNecessaryCalories(caloriesWeightTextView, caloriesExtraTextView);
             }
         });
 
@@ -77,4 +105,18 @@ public class CalculatorActivity extends AppCompatActivity {
         }
     }
 
+    private void calculateNecessaryCalories(EditText weightCalcTextView, EditText extraCaloriesTextView)
+    {
+        TextView caloriesResult = findViewById(R.id.textViewCaloriesResult);
+
+        String caloriesWeightText = weightCalcTextView.getText().toString();
+        int caloriesWeight = caloriesWeightText.length() == 0 ? 0 : Integer.parseInt(caloriesWeightText);
+
+        String extraCaloriesText = extraCaloriesTextView.getText().toString();
+        int extraCalories = extraCaloriesText.length() == 0 ? 0 : Integer.parseInt(extraCaloriesText);
+
+        int resultCalories = caloriesWeight * 32 + extraCalories;
+
+        caloriesResult.setText("Result: " + String.valueOf(resultCalories));
+    }
 }
