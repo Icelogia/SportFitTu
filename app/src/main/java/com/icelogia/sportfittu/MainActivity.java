@@ -8,16 +8,24 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.Switch;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
+import com.icelogia.sportfittu.food.DayMenu;
+import com.icelogia.sportfittu.food.FoodDatabaseMock;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    FoodDatabaseMock foodDb = new FoodDatabaseMock();
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -39,8 +47,7 @@ public class MainActivity extends AppCompatActivity {
         final SharedPreferences.Editor editor = sharedPreferences.edit();
         final boolean isDarkModeOn = sharedPreferences.getBoolean("isDarkModeOn", false);
 
-        // When user reopens the app
-        // after applying dark/light mode
+
         if (isDarkModeOn)
         {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
@@ -58,20 +65,41 @@ public class MainActivity extends AppCompatActivity {
 
                 if (darkModeSwitch.isChecked())
                 {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                    editor.putBoolean("isDarkModeOn", true);
+                    editor.apply();
+                }
+                else
+                {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                     editor.putBoolean("isDarkModeOn", false);
                     editor.apply();
 
                 }
-                else
-                {
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                    editor.putBoolean("isDarkModeOn", true);
-                    editor.apply();
-
-                }
             }
         });
+
+        ProgressBar carboProgressBar = findViewById(R.id.progressBarCarbo);
+        ProgressBar proteinProgressBar = findViewById(R.id.progressBarProtein);
+        ProgressBar fatProgressBar = findViewById(R.id.progressBarFats);
+
+        ArrayList<DayMenu> dayMenus = foodDb.downloadDayMenus();
+
+        int carbons = 0;
+        int proteins = 0;
+        int fats = 0;
+
+        for(int x = 0; x < dayMenus.size(); x++)
+        {
+            DayMenu currentDayMenu = dayMenus.get(x);
+            carbons += Integer.parseInt(currentDayMenu.getCarbons());
+            proteins += Integer.parseInt(currentDayMenu.getProteins());
+            fats  += Integer.parseInt(currentDayMenu.getFats());
+        }
+
+        carboProgressBar.setProgress(carbons / 6);
+        proteinProgressBar.setProgress(proteins / 6);
+        fatProgressBar.setProgress(fats / 6);
 
 
         MobileAds.initialize(this);

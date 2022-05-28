@@ -1,6 +1,8 @@
 package com.icelogia.sportfittu.food;
 
-public class Ingredient
+import java.util.ArrayList;
+
+public class Ingredient extends  Meal
 {
     String name;
     int carbons;
@@ -10,30 +12,26 @@ public class Ingredient
 
     public Ingredient(String name, int carbons, int proteins, int fats)
     {
-        this.name = name;
-        this.carbons = carbons;
-        this.proteins = proteins;
-        this.fats = fats;
-        this.kcal = 4 * carbons + 9 * fats + 4 * proteins;
+        super(name, carbons, proteins, fats);
     }
 
     public String getName() {
         return name;
     }
 
-    public int getCarbons() {
-        return carbons;
-    }
-
-    public int getProteins() {
-        return proteins;
-    }
-
-    public int getFats() {
-        return fats;
-    }
-
-    public int getKcal() {
-        return kcal;
-    }
+//    public int getCarbons() {
+//        return carbons;
+//    }
+//
+//    public int getProteins() {
+//        return proteins;
+//    }
+//
+//    public int getFats() {
+//        return fats;
+//    }
+//
+//    public int getKcal() {
+//        return kcal;
+//    }
 }

@@ -24,6 +24,8 @@
             android:id="@+id/textViewCarbo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
             android:text="Carbohydrates" />
 
         <ProgressBar
@@ -36,6 +38,7 @@
             android:id="@+id/textViewFats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
             android:text="Fats" />
 
         <ProgressBar
@@ -48,6 +51,7 @@
             android:id="@+id/textViewProtein"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
             android:text="Protein" />
 
         <ProgressBar

@@ -36,6 +36,29 @@ public class FoodDatabaseMock
         return dayMenus;
     }
 
+
+    public ArrayList<Meal> downloadMeals()
+    {
+        Meal meal0 = getExampleMeal();
+        Meal meal1 = getExampleMeal();
+        Meal meal2 = getExampleMeal();
+        Meal ingredient0 = new Ingredient("Apple", 20, 20, 20);
+        Meal ingredient1 = new Ingredient("Orange", 40, 20, 10);
+        Meal ingredient2 = new Ingredient("Pear", 15, 20, 14);
+        Meal ingredient3 = new Ingredient("Banana", 5, 6, 2);
+
+        ArrayList<Meal> meals = new ArrayList<Meal>();
+        meals.add(meal0);
+        meals.add(meal1);
+        meals.add(meal2);
+        meals.add(ingredient0);
+        meals.add(ingredient1);
+        meals.add(ingredient2);
+        meals.add(ingredient3);
+
+
+        return meals;
+    }
     private Meal  getExampleMeal()
     {
         Ingredient ingredient0 = new Ingredient("Apple", 20, 20, 20);
