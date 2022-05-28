@@ -10,8 +10,10 @@
         android:id="@+id/linearLayoutPreviousMeasure"
         android:layout_width="360dp"
         android:layout_height="132dp"
+        android:layout_marginTop="52dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -33,8 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:width="180dp"
-                android:text="TextView" />
+                android:width="180dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -56,8 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:width="180dp"
-                android:text="TextView" />
+                android:width="180dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -71,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:width="180dp"
-                android:text="Body"
+                android:text="Belly"
                 android:textStyle="bold" />
 
             <TextView
@@ -79,8 +79,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:width="180dp"
-                android:text="TextView" />
+                android:width="180dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -102,8 +101,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:width="180dp"
-                android:text="TextView" />
+                android:width="180dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -125,16 +123,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:width="180dp"
-                android:text="TextView" />
+                android:width="180dp" />
         </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="355dp"
-        android:layout_height="423dp"
+        android:layout_width="357dp"
+        android:layout_height="352dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -147,93 +144,97 @@
             android:id="@+id/textViewChest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Chest" />
 
         <EditText
             android:id="@+id/editTextChest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:editable="false"
+            android:editable="true"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:focusableInTouchMode="true"
+            android:inputType="number"
             android:minHeight="48dp"
-            android:text="Name" />
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/textViewBiceps"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Biceps" />
 
         <EditText
             android:id="@+id/editTextBiceps"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:editable="false"
+            android:editable="true"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:focusableInTouchMode="true"
+            android:inputType="number"
             android:minHeight="48dp"
-            android:text="Name" />
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/textViewBelly"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Belly" />
 
         <EditText
             android:id="@+id/editTextBelly"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:editable="false"
+            android:editable="true"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:focusableInTouchMode="true"
+            android:inputType="number"
             android:minHeight="48dp"
-            android:text="Name" />
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/textViewHips"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Hips" />
 
         <EditText
             android:id="@+id/editTextHips"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:editable="false"
+            android:editable="true"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:focusableInTouchMode="true"
+            android:inputType="number"
             android:minHeight="48dp"
-            android:text="Name" />
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
-            android:id="@+id/textViewThigs"
+            android:id="@+id/textViewThighs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Thighs" />
 
         <EditText
-            android:id="@+id/editTextThigs"
+            android:id="@+id/editTextThighs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:editable="false"
+            android:editable="true"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:focusableInTouchMode="true"
+            android:inputType="number"
             android:minHeight="48dp"
-            android:text="Name" />
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="394dp"
-        android:layout_height="98dp"
+        android:layout_width="363dp"
+        android:layout_height="67dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.311">
+        app:layout_constraintVertical_bias="0.134">
 
         <Button
             android:id="@+id/buttonSaveEdit"
